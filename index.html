@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="leftSide">
+      <img src="img/background.webp" alt="" />
+      <div class="desc">
+        <img src="img/logo.png" alt="" />
+        <span>ODIN</span>
+      </div>
+    </div>
+
+    <div class="rightSide">
+      <div class="container">
+        <div class="header">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dream.</p>
+          <p>Sign up <span>now</span> to get started.</p>
+          <p class="lol">You <span>know</span> you want to.</p>
+        </div>
+        <div class="form">
+          <p>Let's do this!</p>
+          <section>
+            <form action="" id="myForm">
+              <div class="name">
+                <label for="firstName"
+                  >FIRST NAME
+                  <input type="text" id="firstName" required maxlength="20" />
+                </label>
+              </div>
+              <div class="email">
+                <label for="mail"
+                  >EMAIL
+                  <input type="email" name="" autocomplete="off " id="email" required />
+                </label>
+                <p class="email-error"></p>
+              </div>
+              <div class="pwd">
+                <label for="pwdd"
+                  >PASSWORD
+                  <input type="password" name="" autocomplete="off" minlength="8" id="pwdd" required />
+                </label>
+                <p class="pwd-error"></p>
+              </div>
+              <div class="lastName">
+                <label for="lastName"
+                  >LAST NAME
+                  <input type="text" id="lastName" required max-length="20" />
+                </label>
+              </div>
+              <div class="phoneNum">
+                <label for="phone"
+                  >PHONE NUMBER
+                  <input type="tel" id="phone" pattern="^(0|[1-9][0-9]*)$" minlength="12" maxlength="12" required />
+                </label>
+                <p class="tel-error"></p>
+              </div>
+              <div class="confirm">
+                <label for="confirmpwd"
+                  >CONFIRM PASSWORD
+                  <input type="password" id="confirmpwd" required />
+                  <p class="pwdC-error"></p>
+                </label>
+              </div>
+            </form>
+          </section>
+        </div>
+        <div class="bottom">
+          <button type="submit" form="myForm">Create Account</button>
+          <div class="login">Already have an Account?<a href="#">Log in</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

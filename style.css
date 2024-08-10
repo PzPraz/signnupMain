@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "norse";
+  src: url(../Downloads/Norse.otf);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css reset */
+
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.leftSide {
+  background-repeat: no-repeat;
+  width: 40%;
+  position: relative;
+}
+
+.leftSide img {
+  width: 100%;
+  height: 100vh;
+}
+
+.desc {
+  width: 100%;
+  font-family: "norse", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  font-size: 70px;
+  color: white;
+  top: 20%;
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.desc img {
+  width: 70px;
+  height: 90px;
+  margin-left: 170px;
+}
+
+.desc span {
+  position: absolute;
+  top: 20px;
+}
+
+.rightSide {
+  background-color: #eaeaea;
+  width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.div {
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 1 1em rgba(0, 0, 0, 0.5);
+}
+
+.container span {
+  font-style: italic;
+  color: black;
+}
+
+.container {
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.lol {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.header {
+  width: 75%;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.form {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background-color: white;
+  width: 100%;
+  padding-left: 30px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+}
+
+label {
+  color: rgb(68, 88, 107);
+  font-size: 10px;
+}
+
+section div {
+  margin-top: 10px;
+}
+
+input {
+  display: block;
+}
+
+section div {
+  flex: 1;
+}
+
+.firstName {
+  order: 1;
+}
+
+.email {
+  order: 3;
+}
+
+.lastName {
+  order: 2;
+}
+
+.phoneNum {
+  order: 4;
+}
+
+.pwd {
+  order: 5;
+}
+
+.confirm {
+  order: 6;
+}
+
+.bottom {
+  padding-left: 30px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 40px;
+  color: white;
+  background-color: #596d48;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.login {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.bottom a {
+  color: #596d48;
+  font-style: normal;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #719154;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+input {
+  box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+input:focus {
+  opacity: 1;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+input:focus:invalid {
+  border-color: red;
+  opacity: 1;
+  box-shadow: none;
+}
+
+input {
+  border: 1px solid #333;
+  border-radius: 5px;
+  outline: none;
+}
+
+.email-error,
+.tel-error,
+.pwd-error,
+.pwdC-error {
+  font-size: 12px;
+  color: red;
+  font-weight: 300;
+  margin-bottom: 0;
+  position: absolute;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+  .leftSide {
+    width: 100%;
+  }
+  .desc img {
+    margin-left: 130px;
+  }
+  .rightSide {
+    width: 100%;
+  }
+  .container {
+    margin-top: 20px;
+  }
+  section {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .form {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-left: 15px;
+  }
+  .bottom {
+    padding-left: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header {
+    padding-left: 15px;
+  }
+}
